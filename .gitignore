@@ -1,3 +1,5 @@
 sd.txt
 file1.t
 sd/
+*.pdf
+!3.pdf
