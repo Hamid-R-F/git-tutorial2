@@ -1,41 +1,59 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
+.container{
+    background-color: orangered;
     display: grid;
     grid-template-areas: 
-        "header header header"
-        "nav section aside"
-        "footer footer footer"
+    "item1 item1 item2 item2"
+    "item3 item4 item5 item6"
+    "item7 item8 item9 item10"
     ;
-    grid-template-columns: 15% auto 18%;
-    grid-template-rows: 80px auto 50px;
-    gap: 5px;
-    /* margin: 10px; */
-    height: 100vh;
-}
-header{
-    grid-area: header;
-    background: #707070;
-}
-nav{
-    grid-area: nav;
-    background: #c9bfbf;
-}
-section{
-    grid-area: section;
-    background: #ababab;
-}
-aside{
-    grid-area: aside;
-    background: #c9bfbf;
-}
-footer{
-    grid-area: footer;
-    background: #707070;
-}
-header , nav , aside , section , footer{
+    /* grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px 80px 80px; */
+    gap: 10px;
     padding: 5px;
+}
+.item{
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+}
+.item1{
+    grid-area: item1;
+    background: yellow;
+}
+.item2{
+    grid-area: item2;
+    background: yellow;
+
+}
+.item3{
+    grid-area: item3;
+    background: white;
+}
+.item4{
+    grid-area: item4;
+    background: white;
+}
+.item5{
+    grid-area: item5;
+    background: white;
+}
+.item6{
+    grid-area: item6;
+    background: white;
+}
+.item7{
+    grid-area: item7;
+    background: white;
+}
+.item8{
+    grid-area: item8;
+    background: white;
+}
+.item9{
+    grid-area: item9;
+    background: white;
+}
+.item10{
+    grid-area: item10;
+    background: white;
 }
