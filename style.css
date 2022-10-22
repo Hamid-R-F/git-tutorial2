@@ -1,39 +1,41 @@
-.container{
-    background-color: yellowgreen;
-    padding: 10px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
     display: grid;
-    grid-template-columns: repeat(3, 150px);
-    grid-template-rows: repeat(4, 100px);
-    gap: 10px;
+    grid-template-areas: 
+        "header header header"
+        "nav section aside"
+        "footer footer footer"
+    ;
+    grid-template-columns: 15% auto 18%;
+    grid-template-rows: 80px auto 50px;
+    gap: 5px;
+    /* margin: 10px; */
+    height: 100vh;
 }
-.item{
-    background-color: whitesmoke;
-    border: 1px solid black;
-    padding: 10px;
-    font-size: 35px;
-    text-align: center;
-    grid-template: ;
+header{
+    grid-area: header;
+    background: #707070;
 }
-.item1{
-    grid-row-start: 1;
-    grid-row-end: span 5;
-    grid-column-start: 1;
-    grid-column-end: span 2;
-   
+nav{
+    grid-area: nav;
+    background: #c9bfbf;
 }
-/* .item2{
-    grid-row-start:3 ;
-    grid-row-end:4 ;
-    grid-column-start:3 ;
-    grid-column-end:4 ;
-} */
-.item2{
-    /* grid-row: 3/4;
-    grid-column: 3/4; */
-    
+section{
+    grid-area: section;
+    background: #ababab;
 }
-.item4{
-    background-color: red;
-    grid-row: 3/4;
-    grid-column: 1/2;
+aside{
+    grid-area: aside;
+    background: #c9bfbf;
+}
+footer{
+    grid-area: footer;
+    background: #707070;
+}
+header , nav , aside , section , footer{
+    padding: 5px;
 }
